@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="intex">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsl6u8u8vIjZWQ9RTJfPOpLbTCatIiNf_xtd9t1EmH9tqasRKuGz3hhb6QtXsa1aFj8Ls&usqp=CAU" class="logo" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="#HomeSection" id="navItem1">Home</a>
+                    <a class="nav-link active" href="#Exploreus" id="navItem1">Explore</a>
+                    <a class="nav-link active" href="#ServicesSection" id="navItem2">Services</a>
+                    <a class="nav-link active" href="#GallerySection" id="navItem3">Gallery</a>
+
+
+                    <a class="nav-link active" href="#ContactUsSection" id="navItem4">Contact us</a>
+                </div>
+
+                <div id="section3" class="p-2">
+                    <button class=" btn btn-dark" onclick="display('section1')">Login</button>
+                </div>
+                <div class="p-2">
+                    <button class=" btn btn-dark" onclick="display('section2')">Registration</button>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div id="section1">
+        <div class="login-container p-8 mt-15">
+            <center>
+                <h1 class="p-8">Get in Touch</h1>
+            </center>
+            <div>
+                <label>Username : </label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+            </div>
+            <div>
+                <label>Password : </label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+            </div>
+            <div>
+                <label>Message: </label>
+                <input type="text" placeholder="Message" name="Message" required>
+            </div>
+
+            <div class="" style="border-radius:8px">
+                <button class="btn btn-primary my-4" onclick="display('section3')">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div id="section2">
+            <div class="login-container">
+                <center>
+                    <h1>Registration Form</h1>
+                </center>
+                <div>
+                    <label>Username : </label>
+                    <input type="text" placeholder="Enter Name" name="Name" required>
+                </div>
+                <div>
+                    <label>E-mail : </label>
+                    <input type="text" placeholder="email" name="E-mail" required>
+                </div>
+                <div>
+                    <label>Password : </label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                </div>
+                <div>
+                    <label>Confirm Password : </label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                </div>
+                <button class="p-8 m-8" type="submit">Submit</button>
+                <button type="button" class="p-8 m-8" onclick="display('section4')"> Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="HomeSection" class="banner-section-bg-container d-flex justify-content-center flex-column">
+        <div class="banner-container">
+            <div id="carouselExampleControls" class="carousel slide mb-3" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.pexels.com/photos/2946979/pexels-photo-2946979.jpeg?auto=compress&cs=tinysrgb&w=400" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.pexels.com/photos/279222/pexels-photo-279222.jpeg?auto=compress&cs=tinysrgb&w=400" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.pexels.com/photos/256431/pexels-photo-256431.jpeg?auto=compress&cs=tinysrgb&w=400" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="Aboutus" class="container">
+        <h1 class=" fw-bold text-center my-4">About us</h1>
+        <div>
+            <div class="  d-flex flex-row">
+                <img src="https://images.pexels.com/photos/2553425/pexels-photo-2553425.jpeg?auto=compress&cs=tinysrgb&w=400" class=" about-img w-cover mb-4 p-4 text-left img-fulid ">
+                <img src="https://images.pexels.com/photos/3494806/pexels-photo-3494806.jpeg?auto=compress&cs=tinysrgb&w=400" class=" about-img w-cover mb-4 p-4 text-center img-fulid">
+            </div>
+            <p class="fw-bold" style="font-size:40px;">At Libro, we're passionate about connecting readers with the books they love. Our user-friendly platform makes it easy to discover new titles and dive into captivating stories.
+
+                We believe in the power of knowledge and the joy of reading. Join us in our mission to make literature accessible to everyone.
+
+                With a diverse collection of genres and authors, there's something for every book lover at Libro.</p>
+        </div>
+
+    </div>
+
+    <div id="Exploreus" class="pb-5 pt-5">
+        <h1 class="fw-bold text-center my-4"> Explore</h1>
+        <p class="text-center   mx-auto mb-5">Latest Reads</p>
+        <div class="col-md-12">
+            <div class="card-box">
+                <img src=" https://images.pexels.com/photos/768125/pexels-photo-768125.jpeg?auto=compress&cs=tinysrgb&w=400" class="Explore-img   text-center " />
+                <h class="p-4" style=" font-size:20px">Fiction</h>
+                <div class="p-4">
+                    <h1>The Mystery of Shadows</h1>
+                    <p class="fw-bold" style="font-size:28px;">There are multiple matches for fiction and the mystery of shadows, including The Shadows by Alex North and Shadows of Truth by Kevin Shief.
+
+                    </p>
+                    <button class="btn btn-primary my-4">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="card-box">
+                <img src=" https://images.pexels.com/photos/1112048/pexels-photo-1112048.jpeg?auto=compress&cs=tinysrgb&w=400" class="Explore-img   text-center " />
+                <h class="p-4" style=" font-size:20px">Thriller</h>
+                <div class="p-4">
+                    <h1>Chasing Midnight</h1>
+                    <p class="fw-bold" style="font-size:28px;">Chasing Midnight by Randy Wayne White is the 19th book in the Doc Ford series.The book is about a group of armed men who take control of an island and threaten to kill the hostages one by one. The twins in the book take over the island to free sturgeon fingerlings and crash a dolphin resort. The book is suspenseful, but some say the storyline isn't captivating.
+                    </p>
+                    <button class="btn btn-primary my-4">Read More</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-12">
+            <div class="card-box">
+                <img src="https://images.pexels.com/photos/8746170/pexels-photo-8746170.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="Explore-img   text-center " />
+                <h class="p-4" style=" font-size:20px">Love</h>
+                <div class="p-4">
+                    <h1>Love in Bloom</h1>
+                    <p class="fw-bold" style="font-size:28px;">Love in Bloom is a book by Sheila Roberts about a flower shop owner who helps others through her floral arrangements. The book follows Hope Walker, the owner of Changing Seasons Floral, as she meets women who impact her perspective on her life and love.
+
+                    </p>
+                    <button class="btn btn-primary my-4">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="card-box">
+                <img src=" https://images.pexels.com/photos/46274/pexels-photo-46274.jpeg?auto=compress&cs=tinysrgb&w=400" class="Explore-img   text-center " />
+                <h class="p-4" style=" font-size:20px">Fantasy</h>
+                <div class="p-4">
+                    <h1>Realm of Enchantment</h1>
+                    <p class="fw-bold" style="font-size:28px;">Realms of Enchantment is a collection of fantasy tales that takes readers to a world of magic and wonder. The story follows Elara, a young girl who finds an enchanted mirror in her grandmother's attic. The story takes place in the hidden realm of Lumina, where dreams and reality intertwine.
+
+                    </p>
+                    <button class="btn btn-primary my-4">Read More</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="ServicesSection">
+        <h1 class="fw-bold text-center">Membership Plans</h1>
+        <p class="fw-bold text-center">Pay to Acces More Books</p>
+
+        <div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 m-4">
+                    <div style="background-color:#ffe4e1; border-radius:20px;">
+                        <div class="Bronze-container ">
+                            <h1 class="pl-4 my-4">Bronze</h1>
+                            <p class="pl-4">29/month</p>
+                        </div>
+                        <div>
+                            <p class="p-4 fw-bold" style="font-size:40px;">Acces to 3 Books Per month.Perfect for casual readers.</p>
+                        </div>
+
+                        <div class="p-4">
+                            <button class="btn btn-primary  ">Choose Plan</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 m-4">
+                    <div style="background-color:#ffe4e1; border-radius:20px;">
+                        <div class="Bronze-container ">
+                            <h1 class="pl-4 my-4">Silver</h1>
+                            <p class="pl-4">49/month</p>
+                        </div>
+                        <div>
+                            <p class="p-4  fw-bold " style="font-size:40px;">Acces to 2 Books Per month.Perfect for casual readers.</p>
+                        </div>
+
+                        <div class="p-4">
+                            <button class="btn btn-primary  ">Choose Plan</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 m-4">
+                    <div style="background-color:#ffe4e1; border-radius:20px;">
+                        <div class="Bronze-container ">
+                            <h1 class="pl-4 my-4">Gold</h1>
+                            <p class="pl-4">79/month</p>
+                        </div>
+                        <div>
+                            <p class="p-4 fw-bold" style="font-size:40px;">Acces to 12 Books Per month.Perfect for casual readers.</p>
+                        </div>
+
+                        <div class="p-4">
+                            <button class="btn btn-primary  ">Choose Plan</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 m-4">
+                    <div style="background-color:#ffe4e1; border-radius:20px;">
+                        <div class="Bronze-container ">
+                            <h1 class="pl-4 ">Platinum</h1>
+                            <p class="pl-4 ">99/month</p>
+                        </div>
+
+                        <p class="p-4 fw-bold" style="font-size:40px;">Acces to 15 Books Per month.Perfect for casual readers.</p>
+
+                        <div class="p-4">
+                            <button class="btn btn-primary  ">Choose Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="GallerySection" class="banner-section-bg-container d-flex justify-content-center flex-column  ">
+        <h1 class="text-center">Gallery</h1>
+
+        <div id="carouselExampleControls" class="carousel slide mb-3" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img src="https://images.pexels.com/photos/244134/pexels-photo-244134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100 " style="border-radius:80px;" alt="...">
+                </div>
+                <div class="carousel-item ">
+                    <img src="https://images.pexels.com/photos/1848924/pexels-photo-1848924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100 " style="border-radius:80px;" alt="...">
+                </div>
+                <div class="carousel-item ">
+                    <img src="https://images.pexels.com/photos/159775/library-la-trobe-study-students-159775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100 " style="border-radius:80px;" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="text-center">
+        <div class="col-12">
+            <h1 class="follow-us-section-heading">Follow Us</h1>
+            <div class="d-flex flex-row justify-content-center">
+                <div class="follow-us-icon-container">
+                    <i class="fab fa-twitter icon"></i>
+                </div>
+                <div class="follow-us-icon-container">
+                    <i class="fab fa-instagram icon"></i>
+                </div>
+                <div class="follow-us-icon-container">
+                    <i class="fab fa-twitter icon"></i>
+                </div>
+                <div class="follow-us-icon-container">
+                    <i class="fab fa-facebook icon"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="ContactUsSection" class="container mb-5">
+        <div class="mb-4">
+            <h1 class="text-center mx-auto">Contact us</h1>
+            <p class="text-center mx-auto mb-5">Looking for more information Contact us.</p>
+            <div class="row">
+                <div class="col-12 text-center">
+
+                    <h1 class="fw-bold fs-16 mt-20 ">Numetry@gmail.com</h1>
+                    <p><span style="color:#000000">MOBLE NO: </span> <span style="color:#696969">+91 987456123</span></p>
+                    <p class="footer-section-address">
+                        123 Ayur Vigyan Nagar, hyderabad, India.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>

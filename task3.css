@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.logo {
+    width: 20vw;
+    height: 100px;
+}
+
+.about-img {
+    border-radius: 100px;
+}
+
+.Explore-img {
+    border-radius: 40px;
+    height: 60vh;
+    width: 100vw;
+    padding: 18px;
+    margin: 10px;
+
+}
+
+
+
+.Bronze-container {
+    background-color: #EEEEFF;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    color: #FFD700;
+}
+
+.login-container {
+    background-color: #ebf5f0;
+    height: 80vh;
+    text-align: center;
+    border-radius: 20px;
+    margin: 200px;
+    padding: 20px;
+}
+
+.follow-us-icon-container {
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: #faf7e8;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+}
